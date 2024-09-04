@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Elevator : MonoBehaviour
 {
-   public int currentFloor;
+   private int currentFloor;
 
     void Start()
     {

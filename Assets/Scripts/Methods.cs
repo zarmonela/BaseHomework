@@ -13,6 +13,7 @@ public class Methods : MonoBehaviour
 
         IfMethod(3, 5);
         IfMethod(8, 5);
+        IfMethod(5, 5);
 
         SwitchMethod(1);
         SwitchMethod(2);
@@ -32,22 +33,32 @@ public class Methods : MonoBehaviour
     // Create a method that accepts an integer, with an if statement about this integer.
     public void IfMethod(int num, int threshold)
     {
-        if (num > threshold)
+        if (num != threshold)
         {
-            Debug.Log($"number is greater than {threshold}");
-            // Print something inside the if body,
+            if (num > threshold)
+            {
+                Debug.Log($"number is greater than {threshold}");
+                // Print something inside the if body,
+            }
+
+            else
+            {
+                Debug.Log($"number is less than {threshold}");
+
+            }
+            // and inside the else body.
+
         }
 
         else
         {
-            Debug.Log($"number is less than {threshold}");
+            Debug.Log($"number is equal to {threshold}");
+
 
         }
-        // and inside the else body.
-
     }
-    // Create a method that accepts an integer, with a switch statement with 3 cases about this integer.Print something in the cases.
-    public void SwitchMethod(int num)
+        // Create a method that accepts an integer, with a switch statement with 3 cases about this integer.Print something in the cases.
+        public void SwitchMethod(int num)
     {
         switch (num)
         {
