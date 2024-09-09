@@ -16,7 +16,7 @@ public class Elevator : MonoBehaviour
         FloorRequest(99);
         FloorRequest(13);
     }
-
+// amazing amazing architecture and great understanding of code reusability!
     public void FloorRequest(int floor)
     {
         Debug.Log($"current floor {currentFloor} | FLOOR REQUEST: {floor} ");
